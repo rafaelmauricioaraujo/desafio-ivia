@@ -24,12 +24,6 @@ public class Numero {
 		Inteiro inteiroDezena = inteiros.get(ordemDezena);
 		Inteiro inteiroUnidade = inteiros.get(ordemUnidade);
 		
-		/*
-		return inteiroMilhar.getMilhar() + " e " +
-		inteiroCentena.getCentena() + " e " + inteiroDezena.getDezena() +
-		" e " + inteiroUnidade.getUnidade();
-		*/
-		
 		return monta(inteiroMilhar == null ? "" : inteiroMilhar.getMilhar(),
 							inteiroCentena == null ? "" : inteiroCentena.getCentena(),
 							inteiroDezena == null ? "" : inteiroDezena.getDezena(),
