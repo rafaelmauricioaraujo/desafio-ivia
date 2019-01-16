@@ -13,14 +13,14 @@ public class Main {
 		
 		listaInteiros.add(new Inteiro(0, "", "", "", "", ""));
 		listaInteiros.add(new Inteiro(1, "um", "dez", "onze", "cento", "mil"));
-		listaInteiros.add(new Inteiro(2, "dois mil", "duzentos", "vinte", "dois"));
-		listaInteiros.add(new Inteiro(3, "tres mil", "trezentos", "trinta", "tres"));
-		listaInteiros.add(new Inteiro(4, "quatro mil", "quatrocentos", "quarenta", "quatro"));
-		listaInteiros.add(new Inteiro(5, "cinco mil", "quinhentos", "cinquenta", "cinco"));
-		listaInteiros.add(new Inteiro(6, "seis mil", "seiscentos", "sessenta", "seis"));
-		listaInteiros.add(new Inteiro(7, "sete mil", "setecentos", "setenta", "sete"));
-		listaInteiros.add(new Inteiro(8, "oito mil", "oitocentos", "oitenta", "oito"));
-		listaInteiros.add(new Inteiro(9, "nove mil", "novecentos", "noventa", "nove"));
+		listaInteiros.add(new Inteiro(2, "dois", "vinte", "doze", "duzentos", "dois mil"));
+		listaInteiros.add(new Inteiro(3, "tres", "trinta", "treze", "trezento", "tres mil"));
+		listaInteiros.add(new Inteiro(4, "quatro", "quarenta", "cartoze", "quatrocentos", "quatro mil"));
+		listaInteiros.add(new Inteiro(5, "cinco", "cinquenta", "quinze", "quinhentos", "cinco mil"));
+		listaInteiros.add(new Inteiro(6, "seis", "sessenta", "dezesseis", "sesseiscentos", "seis mil"));
+		listaInteiros.add(new Inteiro(7, "sete", "setenta", "dezessete", "setecentos", "sete mil"));
+		listaInteiros.add(new Inteiro(8, "oito", "oitenta", "dezoito", "oitocentos", "oito mil"));
+		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
 		Numero numero = new Numero(100, listaInteiros);
 		System.out.println(numero.descreveNumero());
