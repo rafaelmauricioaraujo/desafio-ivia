@@ -4,15 +4,23 @@ import java.util.ArrayList;
 
 public class Numero {
 	
-	public int valor;
-	public ArrayList<Inteiro> inteiros;
+	private int valor;
+	private ArrayList<Inteiro> inteiros;
 	
 	public Numero(int valor, ArrayList<Inteiro> inteiros) {
 		this.valor = valor;
 		this.inteiros = inteiros;
 	}
 	
-	public String descreveNumero() {
+	public String numeroPorExtenso() {
+		return decomporETranscrever();
+	}
+	
+	public int totalDeLetras() {
+		return this.numeroPorExtenso().length();
+	}
+	
+	private String decomporETranscrever() {
 		
 		int ordemMilhar = this.valor / 1000;
 		int ordemCentena = (this.valor % 1000) / 100;
@@ -32,7 +40,8 @@ public class Numero {
 	}
 	
 	
-	String monta(String milhar, String centena, String dezena, String teen, String unidade) {
+	private String monta(String milhar, String centena, String dezena, String teen, String unidade) {
+
 		//Números contendos 1000 a 9000 na ordem de milhares
 		String numeroMontado = milhar;
 		
@@ -70,10 +79,5 @@ public class Numero {
 		}
 		
 		return numeroMontado;
-	}
-	
-	
-	public int contaLetras(String valor) {
-		return 0;
 	}
 }
