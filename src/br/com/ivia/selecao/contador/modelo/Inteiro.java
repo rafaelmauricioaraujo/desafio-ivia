@@ -9,7 +9,7 @@ public class Inteiro {
 	private String centena;
 	private String milhar;
 		
-	public Inteiro(int valor, String unidade, String dezena, String teen, String milhar, String centena) {
+	public Inteiro(int valor, String unidade, String dezena, String teen, String centena, String milhar) {
 		this.valor = valor;
 		this.unidade = unidade;
 		this.dezena = dezena;

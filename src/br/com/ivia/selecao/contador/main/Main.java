@@ -25,5 +25,16 @@ public class Main {
 		Numero numero = new Numero(100, listaInteiros);
 		System.out.println(numero.descreveNumero());
 		
+		/*
+		int milhar = 100 / 1000;
+		int centena = (100 % 1000) / 100;
+		int dezena = (100 % 100) / 10;
+		int unidade = 100 % 10;
+		
+		System.out.println(milhar);
+		System.out.println(centena);
+		System.out.println(dezena);
+		System.out.println(unidade);
+		*/
 	}
 }
