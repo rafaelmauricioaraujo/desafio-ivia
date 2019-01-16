@@ -22,7 +22,7 @@ public class Main {
 		listaInteiros.add(new Inteiro(8, "oito", "oitenta", "dezoito", "oitocentos", "oito mil"));
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
-		Numero numero = new Numero(121, listaInteiros);
+		Numero numero = new Numero(122, listaInteiros);
 		System.out.println(numero.descreveNumero());
 		
 	}

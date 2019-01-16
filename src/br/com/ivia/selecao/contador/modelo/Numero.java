@@ -1,7 +1,6 @@
 package br.com.ivia.selecao.contador.modelo;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class Numero {
 	
