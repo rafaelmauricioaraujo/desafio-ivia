@@ -10,12 +10,16 @@ public class Inteiro {
 	private String milhar;
 		
 	public Inteiro(int valor, String unidade, String dezena, String teen, String centena, String milhar) {
-		this.valor = valor;
-		this.unidade = unidade;
-		this.dezena = dezena;
-		this.teen = teen;
-		this.centena = centena;
-		this.milhar = milhar;		
+		if (valor >= 0) {
+			this.valor = valor;
+			this.unidade = unidade;
+			this.dezena = dezena;
+			this.teen = teen;
+			this.centena = centena;
+			this.milhar = milhar;
+		}else {
+			throw new IllegalArgumentException("Digite um número positivo");
+		}
 	}
 	
 	public int getValor() {

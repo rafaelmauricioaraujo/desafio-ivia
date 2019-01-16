@@ -11,7 +11,7 @@ public class Main {
 		
 		ArrayList<Inteiro> listaInteiros = new ArrayList<>();
 		
-		listaInteiros.add(new Inteiro(0, "", "", "", "", ""));
+		listaInteiros.add(new Inteiro(0, "zero", "zero", "zero", "zero", "zero"));
 		listaInteiros.add(new Inteiro(1, "um", "dez", "onze", "cento", "mil"));
 		listaInteiros.add(new Inteiro(2, "dois", "vinte", "doze", "duzentos", "dois mil"));
 		listaInteiros.add(new Inteiro(3, "tres", "trinta", "treze", "trezento", "tres mil"));
@@ -22,7 +22,7 @@ public class Main {
 		listaInteiros.add(new Inteiro(8, "oito", "oitenta", "dezoito", "oitocentos", "oito mil"));
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
-		Numero numero = new Numero(-124, listaInteiros);
+		Numero numero = new Numero(0, listaInteiros);
 		System.out.println(numero.numeroPorExtenso());
 		System.out.println(numero.totalDeLetras());
 		
