@@ -25,12 +25,20 @@ public class Numero {
 		Inteiro inteiroDezena = inteiros.get(ordemDezena);
 		Inteiro inteiroUnidade = inteiros.get(ordemUnidade);
 		
+		/*
 		return inteiroMilhar.getMilhar() + " e " +
 		inteiroCentena.getCentena() + " e " + inteiroDezena.getDezena() +
 		" e " + inteiroUnidade.getUnidade();
+		*/
+		
+		return monta(inteiroMilhar == null ? "" : inteiroMilhar.getMilhar(),
+							inteiroCentena == null ? "" : inteiroCentena.getCentena(),
+							inteiroDezena == null ? "" : inteiroDezena.getDezena(),
+							ordemDezena == 1 && inteiroUnidade != null ? inteiroUnidade.getTeen() : "",
+							inteiroUnidade == null ? "" : inteiroUnidade.getUnidade());
 	}
 	
-	/*
+	
 	String monta(String milhar, String centena, String dezena, String teen, String unidade) {
 		//Números contendos 1000 a 9000 na ordem de milhares
 		String numeroMontado = milhar;
@@ -44,12 +52,33 @@ public class Numero {
 		
 		//Números contendo 20 a 90 na ordem de dezenas
 		if((numeroMontado != "") && (teen == "") && (dezena != "")) {
-			
+			numeroMontado = numeroMontado + " e " + dezena;
+		}else if((dezena != "") && (teen == "")) {
+			numeroMontado = dezena;
+		}
+		
+		//Números de 11 a 19
+		if((numeroMontado != "") && (teen != "")) {
+			numeroMontado = numeroMontado + " e " + teen;
+		}else if (teen != "") {
+			numeroMontado = teen;
+		}
+		
+		//Números de 1 a 9
+		if((numeroMontado != "") && (teen == "") && (unidade != "")) {
+			numeroMontado = numeroMontado + " e " + unidade;
+		}else if((teen == "") && (unidade != "")) {
+			numeroMontado = unidade;
+		}
+		
+		//Corrigindo transcrição do 100
+		if(numeroMontado == "cento") {
+			numeroMontado = "cem";
 		}
 		
 		return numeroMontado;
 	}
-	*/
+	
 	
 	public int contaLetras(String valor) {
 		return 0;

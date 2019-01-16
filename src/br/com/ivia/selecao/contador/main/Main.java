@@ -22,19 +22,8 @@ public class Main {
 		listaInteiros.add(new Inteiro(8, "oito", "oitenta", "dezoito", "oitocentos", "oito mil"));
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
-		Numero numero = new Numero(100, listaInteiros);
+		Numero numero = new Numero(121, listaInteiros);
 		System.out.println(numero.descreveNumero());
 		
-		/*
-		int milhar = 100 / 1000;
-		int centena = (100 % 1000) / 100;
-		int dezena = (100 % 100) / 10;
-		int unidade = 100 % 10;
-		
-		System.out.println(milhar);
-		System.out.println(centena);
-		System.out.println(dezena);
-		System.out.println(unidade);
-		*/
 	}
 }
