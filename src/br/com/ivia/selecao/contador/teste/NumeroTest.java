@@ -4,17 +4,18 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import br.com.ivia.selecao.contador.modelo.Inteiro;
 import br.com.ivia.selecao.contador.modelo.Numero;
 
-class NumeroPorExtensoTest {
-
-	@Test
-	public void retornaDezParaInteiroDez() {
-		
-		ArrayList<Inteiro> listaInteiros = new ArrayList<>();
+class NumeroTest {
+	
+	public ArrayList<Inteiro> listaInteiros;
+	
+	@Before
+	public void inicialize() {
 		
 		listaInteiros.add(new Inteiro(0, "", "", "", "", ""));
 		listaInteiros.add(new Inteiro(1, "um", "dez", "onze", "cento", "mil"));
@@ -27,9 +28,13 @@ class NumeroPorExtensoTest {
 		listaInteiros.add(new Inteiro(8, "oito", "oitenta", "dezoito", "oitocentos", "oito mil"));
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
-		Numero numero = new Numero(10, listaInteiros);
-		String result = numero.numeroPorExtenso();
-		assertEquals("dez", result);
 	}
+	
+	@Test
+	public void retornaDezParaInteiroDez() {
+		Numero numeroDez = new Numero(10, listaInteiros);
+		String transcricao = numeroDez.numeroPorExtenso();
+		assertEquals("dez", transcricao);
 
+	}
 }
