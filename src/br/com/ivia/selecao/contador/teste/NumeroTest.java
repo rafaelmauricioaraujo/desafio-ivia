@@ -30,6 +30,8 @@ class NumeroTest {
 		
 	}
 	
+	//Testes abaixo são relativos ao método que converte um número em um inteiro por extenso.
+	
 	@Test
 	public void deveRetornarStringUmParaInteiroUm() {
 		Numero numero = new Numero(1, listaInteiros());
@@ -62,5 +64,6 @@ class NumeroTest {
 		String result = numero.numeroPorExtenso();
 		assertEquals("mil", result);
 	}
+	
 	
 }
