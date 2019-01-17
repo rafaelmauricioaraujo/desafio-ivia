@@ -73,5 +73,11 @@ class NumeroTest {
 		assertEquals(6, result);
 	}
 	
+	@Test void deveRetornarOInteiroTresParaONumeroMil() {
+		Numero numero = new Numero(1000, listaInteiros());
+		int result = numero.totalDeLetras();
+		assertEquals(3, result);
+	}
+	
 	
 }
