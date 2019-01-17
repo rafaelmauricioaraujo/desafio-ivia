@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
 import br.com.ivia.selecao.contador.modelo.Inteiro;
