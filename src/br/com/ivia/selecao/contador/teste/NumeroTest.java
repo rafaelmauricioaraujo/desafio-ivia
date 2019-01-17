@@ -65,5 +65,12 @@ class NumeroTest {
 		assertEquals("mil", result);
 	}
 	
+	//Testes abaixo são relativos ao método que conta o número de letras de cada string.
+	
+	@Test void deveRetornarOInteiroSeisParaONumeroQuatro() {
+		Numero numero = new Numero(4, listaInteiros());
+		int result = numero.totalDeLetras();
+		assertEquals(6, result);
+	}
 	
 }
