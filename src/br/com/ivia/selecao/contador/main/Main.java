@@ -28,10 +28,6 @@ public class Main {
 		System.out.println("Total acumulado: " + numero.totalDeLetrasAcumuladas());
 		
 		
-		String numeroExtenso = "";
-		int letras = 0;
-		int total = 0;
-		
 		for (int i = 1; i <= 1000; i++) {
 			Numero valor = new Numero(i, listaInteiros);
 			System.out.print(valor.numeroPorExtenso() + ", ");
