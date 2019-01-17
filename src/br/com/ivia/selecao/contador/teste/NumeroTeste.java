@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import br.com.ivia.selecao.contador.modelo.Inteiro;
 import br.com.ivia.selecao.contador.modelo.Numero;
 
-class NumeroTest {
+class NumeroTeste {
 	
 	public ArrayList<Inteiro> listaInteiro(){
 		
