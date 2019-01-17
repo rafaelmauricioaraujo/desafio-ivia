@@ -87,6 +87,10 @@ class NumeroTest {
 	
 	//Testes abaixo são relativos ao método que conta o numero de letras acumuladas até o valor
 	
-	
+	@Test void deveRetonrnarOInteiroTrintaESeteParaASomaDasLetrasAteNove() {
+		Numero numero = new Numero(9, listaInteiros());
+		int result = numero.totalDeLetrasAcumuladas();
+		assertEquals(37, result);
+	}
 	
 }
