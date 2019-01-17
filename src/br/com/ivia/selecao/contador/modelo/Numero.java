@@ -84,7 +84,7 @@ public class Numero {
 	 */
 	private String monta(String milhar, String centena, String dezena, String teen, String unidade) {
 
-		//Números contendos 1000 a 9000 na ordem de milhares
+		//Números contendo 1000 a 9000 na ordem de milhares
 		String numeroMontado = milhar;
 		
 		//Números contendo 100 a 900 na ordem de centenas
