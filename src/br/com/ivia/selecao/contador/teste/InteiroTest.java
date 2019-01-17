@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class InteiroTest {
 
 	@Test
-	void test() {
+	void CriandoInteiroComValorDez() {
 		fail("Not yet implemented");
 	}
 
