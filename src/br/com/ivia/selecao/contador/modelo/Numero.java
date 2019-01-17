@@ -120,7 +120,7 @@ public class Numero {
 			numeroMontado = "cem";
 		}
 		
-		return numeroMontado;
+		return numeroMontado.replaceAll("\\s", "");
 	}
 	
 	private int somaAcumulada() {

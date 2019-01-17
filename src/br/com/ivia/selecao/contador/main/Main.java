@@ -23,14 +23,14 @@ public class Main {
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
 		Numero numero = new Numero(1000, listaInteiros);
-		System.out.println(numero.numeroPorExtenso().replaceAll("\\s",""));
+		System.out.println(numero.numeroPorExtenso());
 		System.out.println("Total de letras: " + numero.totalDeLetras());
 		System.out.println("Total acumulado: " + numero.totalDeLetrasAcumuladas());
 		
 		
 		for (int i = 1; i <= 1000; i++) {
 			Numero valor = new Numero(i, listaInteiros);
-			System.out.print(valor.numeroPorExtenso() + ", ");
+			System.out.print(valor.numeroPorExtenso().replaceAll("\\s", "") + ", ");
 			System.out.print(valor.totalDeLetras() + ", ");
 			System.out.print(valor.totalDeLetrasAcumuladas());
 			System.out.println();
