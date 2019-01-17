@@ -57,7 +57,7 @@ class NumeroTest {
 	void deveRetornarStringCentoParaInteiroDaOrdemDasCentenasMaioresQueCem() {
 		Numero numero = new Numero(121, listaInteiros());
 		String result = numero.numeroPorExtenso();
-		assertEquals("cento e vinte e um", result);
+		assertEquals("centoevinteeum", result);
 	}
 	
 	@Test 
@@ -87,7 +87,7 @@ class NumeroTest {
 	void deveRetornarOInteiroVinteESeteParaONumeroNovecentosENoventaENove() {
 		Numero numero = new Numero(999, listaInteiros());
 		int result = numero.totalDeLetras();
-		assertEquals(27, result);
+		assertEquals(23, result);
 	}
 	
 	//Testes abaixo são relativos ao método que conta o numero de letras acumuladas até o valor
