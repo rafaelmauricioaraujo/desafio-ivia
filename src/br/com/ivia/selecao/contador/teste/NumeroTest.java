@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import br.com.ivia.selecao.contador.modelo.Inteiro;
 import br.com.ivia.selecao.contador.modelo.Numero;
 
-class NumeroTeste {
+class NumeroTest {
 	
 	public ArrayList<Inteiro> listaInteiros(){
 		
@@ -51,9 +51,16 @@ class NumeroTeste {
 		assertEquals("cem", result);
 	}
 	
+	@Test void deveRetornarStringCentoParaInteiroDaOrdemDasCentenasMaioresQueCem() {
+		Numero numero = new Numero(121, listaInteiros());
+		String result = numero.numeroPorExtenso();
+		assertEquals("cento e vinte e um", result);
+	}
+	
 	@Test void deveRetornarStringMilParaInteiroMil() {
 		Numero numero = new Numero(1000, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("mil", result);
 	}
+	
 }
