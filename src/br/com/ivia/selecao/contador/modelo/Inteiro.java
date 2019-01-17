@@ -1,5 +1,13 @@
 package br.com.ivia.selecao.contador.modelo;
 
+/**
+ * Classe que serve de moldura para se criar uma conjunto contendo as possíveis palavras
+ * que compoe qualquer conjunto de numeros de 1 a 1000
+ * 
+ * @author Rafael
+ *
+ */
+
 public class Inteiro {
 	
 	private int valor;
@@ -8,8 +16,19 @@ public class Inteiro {
 	private String teen;
 	private String centena;
 	private String milhar;
+	
+	/**
+	 * 
+	 * @param valor
+	 * @param unidade
+	 * @param dezena
+	 * @param teen
+	 * @param centena
+	 * @param milhar
+	 */
 		
 	public Inteiro(int valor, String unidade, String dezena, String teen, String centena, String milhar) {
+		
 		if (valor >= 0) {
 			this.valor = valor;
 			this.unidade = unidade;
