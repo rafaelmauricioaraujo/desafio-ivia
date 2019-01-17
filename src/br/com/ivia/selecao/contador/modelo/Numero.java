@@ -122,7 +122,7 @@ public class Numero {
 		
 		return numeroMontado.replaceAll("\\s", "");
 	}
-	
+
 	private int somaAcumulada() {
 		
 		int somaLetras = 0;
