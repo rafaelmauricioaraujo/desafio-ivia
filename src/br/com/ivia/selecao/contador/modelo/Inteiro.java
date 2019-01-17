@@ -4,7 +4,7 @@ package br.com.ivia.selecao.contador.modelo;
  * Classe que serve de moldura para se criar uma conjunto contendo as possíveis palavras
  * que compoe qualquer conjunto de numeros de 1 a 1000
  * 
- * @author Rafael
+ * @author Rafael Araujo
  *
  */
 
@@ -19,12 +19,12 @@ public class Inteiro {
 	
 	/**
 	 * 
-	 * @param valor
-	 * @param unidade
-	 * @param dezena
-	 * @param teen
-	 * @param centena
-	 * @param milhar
+	 * @param valor inteiro utilizado como chave encontrar uma palavra que incie com valor passado, 1
+	 * @param unidade palavra da ordem de unidades que indica a unidade possível valor, ex: 1(um)
+	 * @param dezena palavra da ordem de dezena que indica a dezena possivel do valor, ex: 10(dez)
+	 * @param teen palavra da ordem da dezena que indica variações possíveis do valor, ex: 11(onze)
+	 * @param centena palavra da ordem da centenas que indica variações possíveis do valor, ex: 100(cem)
+	 * @param milhar palavra da ordem das milhares que indica variações possíveis do valor, ex: 1000(mil)
 	 */
 		
 	public Inteiro(int valor, String unidade, String dezena, String teen, String centena, String milhar) {

@@ -1,28 +1,57 @@
 package br.com.ivia.selecao.contador.modelo;
 
 import java.util.ArrayList;
-
+/**
+ * Classe que representa o número e sua decomposição em letras e palavras
+ * 
+ * @author Rafael Araujo
+ *
+ */
 public class Numero {
 	
 	private int valor;
 	private ArrayList<Inteiro> inteiros;
+	
+	/**
+	 * 
+	 * @param valor inteiro que indica o valor do número
+	 * @param inteiros lista contendo as palavras de ordem da unidade, dezena, centena e milhar
+	 */
 	
 	public Numero(int valor, ArrayList<Inteiro> inteiros) {
 		this.valor = valor;
 		this.inteiros = inteiros;
 	}
 	
+	/**
+	 * 
+	 * @return valor do número por extenso
+	 */
 	public String numeroPorExtenso() {
 		return decomporETranscrever().strip();
 	}
+	/**
+	 * 
+	 * @return total de letras da palavra por extenso do número
+	 */
 	
 	public int totalDeLetras() {
 		return this.numeroPorExtenso().length();
 	}
 	
+	/**
+	 * 
+	 * @return total de letras acummuladas até o valor do número
+	 */
+	
 	public int totalDeLetrasAcumuladas() {
 		return this.somaAcumulada();
 	}
+	
+	/**
+	 * Decopoe o valor do Numero em unidade, centena, dezena e milhar e o transcreve
+	 * @return transcrição do valor
+	 */
 	
 	private String decomporETranscrever() {
 		
@@ -44,6 +73,15 @@ public class Numero {
 	}
 	
 	
+	/**
+	 * método para montar a transcrição do valor do Número 
+	 * @param milhar milhar transcrito
+	 * @param centena centena transcrito
+	 * @param dezena dezena transcrito
+	 * @param teen variações da dezena transcrito
+	 * @param unidade unidade transcrito
+	 * @return a transcrição completa do valor
+	 */
 	private String monta(String milhar, String centena, String dezena, String teen, String unidade) {
 
 		//Números contendos 1000 a 9000 na ordem de milhares
