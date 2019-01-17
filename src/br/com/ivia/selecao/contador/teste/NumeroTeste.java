@@ -53,5 +53,7 @@ class NumeroTeste {
 	
 	@Test void deveRetornarStringMilParaInteiroMil() {
 		Numero numero = new Numero(1000, listaInteiros());
+		String result = numero.numeroPorExtenso();
+		assertEquals("mil", result);
 	}
 }
