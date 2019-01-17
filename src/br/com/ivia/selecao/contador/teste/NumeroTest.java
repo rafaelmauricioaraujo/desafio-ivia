@@ -54,7 +54,7 @@ class NumeroTest {
 	}
 	
 	@Test 
-	void deveRetornarStringCentoParaInteiroDaOrdemDasCentenasMaioresQueCem() {
+	void deveRetornarStringCentoParaInteiroDaOrdemDasCentenas() {
 		Numero numero = new Numero(121, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("centoevinteeum", result);
@@ -84,7 +84,7 @@ class NumeroTest {
 	}
 	
 	@Test 
-	void deveRetornarOInteiroVinteESeteParaONumeroNovecentosENoventaENove() {
+	void deveRetornarOInteiroVinteETresParaONumeroNovecentosENoventaENove() {
 		Numero numero = new Numero(999, listaInteiros());
 		int result = numero.totalDeLetras();
 		assertEquals(23, result);
@@ -100,7 +100,7 @@ class NumeroTest {
 	}
 	
 	@Test
-	void deveRetornarOInteiro23084ParaASomaDasLetrasAte1000() {
+	void deveRetornarOInteiro19862ParaASomaDasLetrasAte1000() {
 		Numero numero = new Numero(1000, listaInteiros());
 		int result = numero.totalDeLetrasAcumuladas();
 		assertEquals(19862, result);

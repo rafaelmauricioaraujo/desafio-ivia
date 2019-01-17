@@ -125,7 +125,7 @@ public class Numero {
 
 	private int somaAcumulada() {
 		
-		int somaLetras = 0;
+		int somaLetras = 0; 
 		for(int i = 0; i <= valor; i++) {
 			Numero numero = new Numero(i, inteiros);
 			somaLetras = somaLetras + numero.totalDeLetras();
