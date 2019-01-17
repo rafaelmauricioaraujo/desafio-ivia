@@ -53,13 +53,15 @@ class NumeroTest {
 		assertEquals("cem", result);
 	}
 	
-	@Test void deveRetornarStringCentoParaInteiroDaOrdemDasCentenasMaioresQueCem() {
+	@Test 
+	void deveRetornarStringCentoParaInteiroDaOrdemDasCentenasMaioresQueCem() {
 		Numero numero = new Numero(121, listaInteiros());
 		String result = numero.numeroPorExtenso();
-		assertEquals("centoevinteeum", result);
+		assertEquals("cento e vinte e um", result);
 	}
 	
-	@Test void deveRetornarStringMilParaInteiroMil() {
+	@Test 
+	void deveRetornarStringMilParaInteiroMil() {
 		Numero numero = new Numero(1000, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("mil", result);
@@ -67,32 +69,41 @@ class NumeroTest {
 	
 	//Testes abaixo são relativos ao método que conta o número de letras de cada string.
 	
-	@Test void deveRetornarOInteiroSeisParaONumeroQuatro() {
+	@Test 
+	void deveRetornarOInteiroSeisParaONumeroQuatro() {
 		Numero numero = new Numero(4, listaInteiros());
 		int result = numero.totalDeLetras();
 		assertEquals(6, result);
 	}
 	
-	@Test void deveRetornarOInteiroTresParaONumeroMil() {
+	@Test 
+	void deveRetornarOInteiroTresParaONumeroMil() {
 		Numero numero = new Numero(1000, listaInteiros());
 		int result = numero.totalDeLetras();
 		assertEquals(3, result);
 	}
 	
-	@Test void deveRetornarOInteiroVinteESeteParaONumeroNovecentosENoventaENove() {
+	@Test 
+	void deveRetornarOInteiroVinteESeteParaONumeroNovecentosENoventaENove() {
 		Numero numero = new Numero(999, listaInteiros());
 		int result = numero.totalDeLetras();
-		assertEquals(23, result);
+		assertEquals(27, result);
 	}
 	
 	//Testes abaixo são relativos ao método que conta o numero de letras acumuladas até o valor
 	
-	@Test void deveRetonrnarOInteiroTrintaESeteParaASomaDasLetrasAteNove() {
+	@Test 
+	void deveRetonrnarOInteiroTrintaESeteParaASomaDasLetrasAteNove() {
 		Numero numero = new Numero(9, listaInteiros());
 		int result = numero.totalDeLetrasAcumuladas();
 		assertEquals(37, result);
 	}
 	
-	
+	@Test
+	void deveRetornarOInteiro23084ParaASomaDasLetrasAte1000() {
+		Numero numero = new Numero(1000, listaInteiros());
+		int result = numero.totalDeLetrasAcumuladas();
+		assertEquals(23084, result);
+	}
 	
 }
