@@ -13,7 +13,7 @@ public class Numero {
 	}
 	
 	public String numeroPorExtenso() {
-		return decomporETranscrever();
+		return decomporETranscrever().strip();
 	}
 	
 	public int totalDeLetras() {
