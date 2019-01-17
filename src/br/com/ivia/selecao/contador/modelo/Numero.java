@@ -96,21 +96,21 @@ public class Numero {
 		
 		//Números contendo 20 a 90 na ordem de dezenas
 		if((numeroMontado != "") && (teen == "") && (dezena != "")) {
-			numeroMontado = numeroMontado + "e" + dezena;
+			numeroMontado = numeroMontado + " e " + dezena;
 		}else if((dezena != "") && (teen == "")) {
 			numeroMontado = dezena;
 		}
 		
 		//Números de 11 a 19
 		if((numeroMontado != "") && (teen != "")) {
-			numeroMontado = numeroMontado + "e" + teen;
+			numeroMontado = numeroMontado + " e " + teen;
 		}else if (teen != "") {
 			numeroMontado = teen;
 		}
 		
 		//Números de 1 a 9
 		if((numeroMontado != "") && (teen == "") && (unidade != "")) {
-			numeroMontado = numeroMontado + "e" + unidade;
+			numeroMontado = numeroMontado + " e " + unidade;
 		}else if((teen == "") && (unidade != "")) {
 			numeroMontado = unidade;
 		}
