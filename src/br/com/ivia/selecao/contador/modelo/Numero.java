@@ -89,7 +89,7 @@ public class Numero {
 		
 		//Números contendo 100 a 900 na ordem de centenas
 		if((numeroMontado != "") && (centena != "")) {
-			numeroMontado = numeroMontado + "e" + centena;
+			numeroMontado = numeroMontado + " e " + centena;
 		}else if(centena != "") {
 			numeroMontado = centena;
 		}
