@@ -103,7 +103,7 @@ class NumeroTest {
 	void deveRetornarOInteiro23084ParaASomaDasLetrasAte1000() {
 		Numero numero = new Numero(1000, listaInteiros());
 		int result = numero.totalDeLetrasAcumuladas();
-		assertEquals(23084, result);
+		assertEquals(19862, result);
 	}
 	
 }
