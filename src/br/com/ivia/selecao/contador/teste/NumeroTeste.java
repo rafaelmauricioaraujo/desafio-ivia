@@ -11,7 +11,7 @@ import br.com.ivia.selecao.contador.modelo.Numero;
 
 class NumeroTeste {
 	
-	public ArrayList<Inteiro> listaInteiro(){
+	public ArrayList<Inteiro> listaInteiros(){
 		
 		ArrayList<Inteiro> listaInteiros = new ArrayList<>();
 		
@@ -32,22 +32,26 @@ class NumeroTeste {
 	
 	@Test
 	public void deveRetornarStringUmParaInteiroUm() {
-		Numero numero = new Numero(1, listaInteiro());
+		Numero numero = new Numero(1, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("um", result);
 	}
 	
 	@Test
 	public void deveRetornaStringDezParaInteiroDez() {
-		Numero numero = new Numero(10, listaInteiro());
+		Numero numero = new Numero(10, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("dez", result);
 	}
 	
 	@Test
 	public void deveRetornarStringCemParaInteiroCem() {
-		Numero numero = new Numero(100, listaInteiro());
+		Numero numero = new Numero(100, listaInteiros());
 		String result = numero.numeroPorExtenso();
 		assertEquals("cem", result);
+	}
+	
+	@Test void deveRetornarStringMilParaInteiroMil() {
+		Numero numero = new Numero(1000, listaInteiros());
 	}
 }
