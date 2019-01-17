@@ -20,8 +20,8 @@ public class Numero {
 		return this.numeroPorExtenso().length();
 	}
 	
-	public int totalDeLetrasAcumuladas(int valor) {
-		return this.somaAcumulada(valor);
+	public int totalDeLetrasAcumuladas() {
+		return this.somaAcumulada();
 	}
 	
 	private String decomporETranscrever() {
@@ -85,7 +85,7 @@ public class Numero {
 		return numeroMontado;
 	}
 	
-	private int somaAcumulada(int valor) {
+	private int somaAcumulada() {
 		
 		int somaLetras = 0;
 		for(int i = 0; i <= valor; i++) {
