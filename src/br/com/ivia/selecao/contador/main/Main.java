@@ -23,7 +23,7 @@ public class Main {
 		listaInteiros.add(new Inteiro(9, "nove", "noventa", "dezenove", "novecentos", "nove mil"));
 		
 		Numero numero = new Numero(121, listaInteiros);
-		System.out.println(numero.numeroPorExtenso());
+		System.out.println(numero.numeroPorExtenso().replaceAll("\\s",""));
 		System.out.println("Total de letras: " + numero.totalDeLetras());
 		System.out.println("Total acumulado: " + numero.totalDeLetrasAcumuladas());
 		
