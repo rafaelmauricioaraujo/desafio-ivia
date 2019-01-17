@@ -20,6 +20,10 @@ public class Numero {
 		return this.numeroPorExtenso().length();
 	}
 	
+	public int totalDeLetrasAcumuladas(int valor) {
+		return this.somaAcumulada(valor);
+	}
+	
 	private String decomporETranscrever() {
 		
 		int ordemMilhar = this.valor / 1000;
@@ -79,5 +83,15 @@ public class Numero {
 		}
 		
 		return numeroMontado;
+	}
+	
+	private int somaAcumulada(int valor) {
+		
+		int somaLetras = 0;
+		for(int i = 0; i <= valor; i++) {
+			Numero numero = new Numero(i, inteiros);
+			somaLetras = somaLetras + numero.totalDeLetras();
+		}
+		return somaLetras;
 	}
 }
