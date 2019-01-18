@@ -90,7 +90,7 @@ class NumeroTest {
 		assertEquals(23, result);
 	}
 	
-	//Testes abaixo são relativos ao método que conta o numero de letras acumuladas até o valor
+	//Testes abaixo são relativos ao método que conta o numero de letras acumuladas até o valor.
 	
 	@Test 
 	void deveRetonrnarOInteiroTrintaESeteParaASomaDasLetrasAteNove() {
